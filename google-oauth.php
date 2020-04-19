@@ -2,6 +2,10 @@
 class GoogleOauth
 {
   private $google_client;
+  
+  function __construct($client_id, $secret_key, $url_tujuan) {
+    $this->SetPengaturan($client_id, $secret_key, $url_tujuan);
+  }
   // SetPengaturan($client_id string, $secret_key string, $url_tujuan string)
   // Untuk mengatur pengaturan google oauth
   // @Param :
@@ -17,7 +21,7 @@ class GoogleOauth
     $this->google_client->setClientId($client_id);
     $this->google_client->setClientSecret($secret_key);
     // USER AKAN DIRAHKAN KEHALAMANA DIBAWAH SAAT AUTENTIKASI SELESAI, DENGAN MEMBAWA ?code=TOKENNYA
-    $this->google_client->setRedirectUri('http://google.dafma.id/index.php');
+    $this->google_client->setRedirectUri($url_tujuan);
     $this->google_client->addScope('email');
     $this->google_client->addScope('profile');
     // PENUTUP BAGIAN PENGATURAN
