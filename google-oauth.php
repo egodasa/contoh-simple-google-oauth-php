@@ -35,9 +35,9 @@ class GoogleOauth
   public function GetDataUser($token)
   {
       $data = [
-        "error": true,
-        "message": "Token tidak valid",
-        "data": null
+        "error" => true,
+        "message" => "Token tidak valid",
+        "data" => null
       ];
       // proses pengecekan token
      $token = $this->google_client->fetchAccessTokenWithAuthCode($_GET["code"]);
