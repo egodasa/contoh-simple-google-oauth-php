@@ -53,7 +53,7 @@ class GoogleOauth
       // token yang sudah dicek akan disimpan di variabel $token['access_token']
       $this->google_client->setAccessToken($token['access_token']);
       // buat object google oauth client
-      $this->google_service = new Google_Service_Oauth2($google_client);
+      $this->google_service = new Google_Service_Oauth2($this->google_client);
       // ambil data user dari token
       // VARIABEL DATA AKAN BERISI DATA PROFIL USER
       // VARIABEL DATA BERUPA ARRAY ASSOSIATIF
