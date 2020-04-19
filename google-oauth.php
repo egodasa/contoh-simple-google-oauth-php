@@ -12,6 +12,7 @@ class GoogleOauth
   // $client_id : ID client dari google oauth yang bisa didapatkan dari akun google developer
   // $secret_key : Private client key yang bisa didapatkan dari akun google developer
   // $url_tujuan : Setelah proses login dengan google selesai, maka user akan diarahkan ke $url_tujuan, dengan membaca query string ?code=TOKEN_GOOGLE_OAUTH
+  // $url_tujuan haruslah alamat lengkap dengan domain seperti http://domainkamu.com/halaman.php
   public function SetPengaturan($client_id, $secret_key, $url_tujuan)
   {
     // BAGIAN PENGATURAN GOOGLE OAUTH
