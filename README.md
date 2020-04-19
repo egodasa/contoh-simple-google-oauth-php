@@ -8,3 +8,5 @@ Penjelasan File :
 1. `halaman-success.php` berisi kode untuk menampilkan data user yang sudah login dengan google
 
 Buka file `google-oauth.php` untuk membaca makna dari semua kode yang ada pada repo ini
+
+***Jika terdapat error 400 pada saat mengklik tombol login google, silahkan verifikasikan domain anda tempat menghosting project/repo ini pada https://console.developers.google.com/apis/credentials ****
