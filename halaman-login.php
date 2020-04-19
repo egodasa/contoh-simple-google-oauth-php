@@ -2,7 +2,7 @@
   require "vendor/autoload.php";
   require_once "google-oauth.php"; // file ini berisi kode google oauth yang sudah diringkas
   // informasi seperti username, email, foto dll akan dimunculkan di halaman-success.php
-  $google = new GoogleAuth("CLIEN_ID_ANDA", "PRIVATE_KEY", "halaman-success.php");
+  $google = new GoogleOauth("CLIEN_ID_ANDA", "PRIVATE_KEY", "halaman-success.php");
   $link = $google->GetLinkLogin();
 ?>
 
